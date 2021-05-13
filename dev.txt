@@ -33,4 +33,21 @@ sudo sysctl -p
 
 rails generate controller home index
 
+rails generate devise user
+rake db:migrate
+
+# To customize views:
+$ rails generate devise:views users
+
+# To customize controllers:
+$ rails generate devise:controllers users
+
+## Books
+rails g scaffold Book name:string user:references
+
+
+
+## ADMINS
+### Gemfile
+gem 'rails_admin', '~> 2.0'
 

@@ -5,6 +5,6 @@ class ApplicationController < ActionController::Base
     # user mut be logged for every action in all controllers
 
     def after_sign_in_path_for(resource)
-        # app_dashboard_index_path
+        books_path
     end
 end
