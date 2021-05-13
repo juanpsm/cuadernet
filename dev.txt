@@ -1,0 +1,36 @@
+## instalar rbenv, ruby, sqlite3, npm, yarn, rails
+rbenv install 2.7.3
+rbenv global 2.7.3
+sudo apt install sqlite3
+sudo npm install -g yarn
+gem install rails
+
+rails new cuadernet --skip-sprockets
+cd cuadernet/
+yarn set version latest
+rails server
+
+## push
+git remote add origin https://github.com/pibytes/cuadernet.git
+git add .
+comit..
+git push -u origin main
+
+## Gemfile
+gem 'devise' 
+
+bundle install
+
+rails generate devise:install
+# Seguir las recomendaciones del output
+https://altalogy.com/blog/rails-6-user-accounts-with-3-types-of-roles/
+
+yarn add toastr
+rails server
+>>  FATAL: Listen error: unable to monitor directories for changes.
+sudo sh -c "echo fs.inotify.max_user_watches=524288 >> /etc/sysctl.conf"
+sudo sysctl -p
+
+rails generate controller home index
+
+
