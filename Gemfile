@@ -58,3 +58,6 @@ gem 'devise'
 
 # Admins
 gem 'rails_admin', '~> 2.0'
+
+# Permissions
+gem 'cancancan'
